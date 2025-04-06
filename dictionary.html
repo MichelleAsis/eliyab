@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diksyunaryo | E-LIYAB</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flame-icon">
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+        </svg>
+        <span class="logo-text">E-LIYAB</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Pangunahing Pahina</a>
+        <a href="dictionary.html" class="nav-link active">Diksyunaryo</a>
+        <a href="quiz.html" class="nav-link">Pagsusulit</a>
+        <a href="about.html" class="nav-link">Tungkol Sa</a>
+      </nav>
+
+      <button class="menu-button" id="menuButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flame-icon">
+            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+          </svg>
+          <span class="logo-text">E-LIYAB</span>
+        </a>
+        <button class="close-button" id="closeButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Pangunahing Pahina</a>
+        <a href="dictionary.html" class="mobile-nav-link active">Diksyunaryo</a>
+        <a href="quiz.html" class="mobile-nav-link">Pagsusulit</a>
+        <a href="about.html" class="mobile-nav-link">Tungkol Sa</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="dictionary-section">
+        <!-- Animated ember particles -->
+        <div class="ember-container" id="emberContainer"></div>
+
+        <div class="page-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="page-icon">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <h1 class="page-title">Diksyunaryo ng Pag-uuling ng Bao</h1>
+        </div>
+
+        <div class="intro-card">
+          <p class="intro-text">
+            Narito ang mga natatanging termino at salita na ginagamit sa proseso ng pag-uuling ng bao sa San Lorenzo
+            Ruiz, Camarines Norte. Ang mga salitang ito ay nagpapakita ng mayamang kultura at tradisyon ng mga
+            manggagawa ng uling.
+          </p>
+        </div>
+
+        <div class="dictionary-content">
+          <div class="search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input type="search" id="searchInput" class="search-input" placeholder="Maghanap ng salita...">
+          </div>
+
+          <div class="category-cards">
+            <div class="category-card">
+              <div class="category-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <h3 class="category-title">Mga Kagamitan</h3>
+              </div>
+              <p class="category-description">
+                Mga salitang may kaugnayan sa mga kagamitan at kasangkapan sa pag-uuling ng bao.
+              </p>
+            </div>
+
+            <div class="category-card">
+              <div class="category-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon">
+                  <path d="M22 18.4V5.6a2 2 0 0 0-1.1-1.8l-8-4a2 2 0 0 0-1.8 0l-8 4A2 2 0 0 0 2 5.6v12.8a2 2 0 0 0 1.1 1.8l8 4a2 2 0 0 0 1.8 0l8-4a2 2 0 0 0 1.1-1.8z"></path>
+                  <path d="M12 22V12"></path>
+                  <path d="M12 12 2.5 6.6"></path>
+                  <path d="m12 12 9.5-5.4"></path>
+                </svg>
+                <h3 class="category-title">Mga Proseso</h3>
+              </div>
+              <p class="category-description">
+                Mga salitang may kaugnayan sa mga hakbang at proseso ng pag-uuling ng bao.
+              </p>
+            </div>
+          </div>
+
+          <div class="dictionary-view-toggle">
+            <button id="simpleViewBtn" class="view-button active">Simpleng View</button>
+            <button id="allWordsBtn" class="view-button">Ipakita ang Lahat ng Salita (A-Z)</button>
+          </div>
+
+          <div id="dictionarySimpleView" class="dictionary-simple-view">
+            <div class="accordion" id="dictionaryAccordion">
+              <!-- Accordion items will be generated by JavaScript -->
+            </div>
+          </div>
+
+          <div id="dictionaryAllWordsView" class="dictionary-all-words-view hidden">
+            <!-- A-Z sections will be generated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flame-icon">
+            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+          </svg>
+          <span class="footer-logo-text">E-LIYAB</span>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Pangunahing Pahina
+          </a>
+          <a href="dictionary.html" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Diksyunaryo
+          </a>
+          <a href="quiz.html" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <path d="M12 17h.01"></path>
+            </svg>
+            Pagsusulit
+          </a>
+          <a href="about.html" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
+            </svg>
+            Tungkol Sa
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© <span id="currentYear"></span> E-LIYAB. Lahat ng karapatan ay nakalaan.</p>
+        <p class="footer-description">
+          Isang digital na plataporma tungkol sa wika at kultura ng tradisyunal na proseso ng pag-uuling ng bao sa San
+          Lorenzo Ruiz, Camarines Norte.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/dictionary.js"></script>
+</body>
+</html>
+
